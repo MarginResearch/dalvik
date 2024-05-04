@@ -1,0 +1,14 @@
+[package]
+name = "dalvik"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+resolver = "2"
+authors = ["Evan Richter <evan@margin.re>"]
+description = "Disassembler for Android Dalvik bytecode"
+repository = "https://github.com/MarginResearch/dalvik"
+documentation = "https://docs.rs/dalvik"
+categories = ["encoding", "debugging"]
+keywords = ["dalvik", "android", "disassembler", "dex"]
+
+[dependencies]
