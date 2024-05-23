@@ -9,7 +9,7 @@ authors = ["Evan Richter <evan@margin.re>"]
 description = "Disassembler for Android Dalvik bytecode"
 repository = "https://github.com/MarginResearch/dalvik"
 documentation = "https://docs.rs/dalvik"
-categories = ["encoding", "debugging"]
+categories = ["encoding"]
 keywords = ["dalvik", "android", "disassembler", "dex"]
 
 [dependencies]
