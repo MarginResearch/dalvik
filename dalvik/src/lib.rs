@@ -1,6 +1,11 @@
 //! [Dalvik bytecode] instruction decoding and basic block analysis.
 //!
 //! [Dalvik bytecode]: https://source.android.com/docs/core/runtime/dalvik-bytecode
+//!
+//! The lifted [`Instruction`] type implements [`Display`][`std::fmt::Display`]
+//! for printing the instruction mnemonics, however the best disassembly
+//! (closely matching baksmali) is possible only with dex metadata available,
+//! which can be provided through the [`PrettyPrint`] trait.
 
 #![warn(missing_docs)]
 
