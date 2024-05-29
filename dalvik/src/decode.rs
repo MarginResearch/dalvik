@@ -29,9 +29,9 @@ pub enum Error {
 }
 
 /// Decode all [`Instructions`][`Instruction`] from a slice of codepoints
-pub fn decode_all(mut bytecode: &[u16], until: usize) -> Result<Vec<Instruction>, Error> {
+pub fn decode_all(mut bytecode: &[u16]) -> Result<Vec<Instruction>, Error> {
     let mut ins = Vec::new();
-    while !bytecode.is_empty() && ins.len() < until {
+    while !bytecode.is_empty() {
         dbg!(bytecode.len());
         ins.push(match decode_one(&mut bytecode) {
             Ok(i) => i,

@@ -2,7 +2,7 @@ use super::*;
 use decode::decode_all;
 
 fn decode_and_display(ins: &[u16], expected: &[&str]) {
-    let ins: Vec<String> = decode_all(ins, usize::MAX).unwrap().into_iter().map(|i| i.to_string()).collect();
+    let ins: Vec<String> = decode_all(ins).unwrap().into_iter().map(|i| i.to_string()).collect();
     assert_eq!(ins.as_slice(), expected);
 }
 
